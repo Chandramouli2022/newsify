@@ -60,16 +60,17 @@ The app will run on **http://localhost:3000/**
 
 ## 📷 Screenshots  
 🔹 **Group View (Grid Layout)**  
-![Group View]![alt text](image.png)
+![Group View]![img](image.png)
+
 
 🔹 **List View**  
-![List View]![alt text](image-1.png)
+![List View]![alt](image-1.png)
 
 🔹 **Feed Back**
 ![alt text](image-4.png)
 
 🔹 **Popup Modals both**  
-![Popup Modal]![alt text](image-2.png)
+![Popup Modal]![text](image-2.png)
 ![alt text](image-3.png)
 
 

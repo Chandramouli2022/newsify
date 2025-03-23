@@ -16,7 +16,7 @@ export const useFetchNews = () => {
       try {
         const response = await axios.get(API_URL);
         var articles = data;
-        if (response.data.articles && response.data.articles[0].urlToImage)
+        if (!response.status=="error" &&response.data.articles && response.data.articles[0].urlToImage)
           articles = response.data.articles;
         // console.log(articles);
         const newsData = articles.map((article) => ({
