@@ -36,26 +36,6 @@ const data = [
       "https://apnews.com/article/musk-trump-tesla-stock-lutnick-commerce-secretary-ethics-5a89c2f4a68a9470692630b5c56cffd6",
   },
   {
-    id: "fb683df3-712f-41d6-961f-e28785f3bee4",
-    title:
-      "London's Heathrow Airport to restart flights after fire causes closure - ABC News",
-    description: "No Description",
-    time: "2025-03-21T21:11:15Z",
-    image: "/src/assets/image.jpg",
-    readMore:
-      "https://abcnews.go.com/International/fire-electrical-substation-closes-heathrow-airport/story?id\\\\u003d120009870",
-  },
-  {
-    id: "d4a6ee33-188d-4f29-88a4-c14578c348ff",
-    title:
-      "Stock Market Today: Dow Jones, S&P 500 And Nasdaq All Close Higher After Final Burst (Live Coverage) - Investor's Business Daily",
-    description: "No Description",
-    time: "2025-03-21T21:10:00Z",
-    image: "/src/assets/image.jpg",
-    readMore:
-      "https://www.investors.com/market-trend/stock-market-today/nasdaq-sp500-dow-jones-berkshire-hathaway-nike-earnings-axsome-nvidia-palantir-axsome/",
-  },
-  {
     id: "5b3720be-35c2-4f52-9cb8-97fb6e5bfd26",
     title:
       "JPMorgan quietly renames DEI program as White House wages war on woke corporate policies - New York Post ",
@@ -216,6 +196,16 @@ const data = [
       "https://image.cnbcfm.com/api/v1/image/108108037-17406068842025-01-07t041321z_2046107004_rc2s4caqeorx_rtrmadp_0_tech-ces-nvidia.jpeg?v=1741627841&w=1920&h=1080",
     readMore:
       "https://www.cnbc.com/2025/03/21/nvidias-ceo-tried-to-help-the-quantum-companies-but-a-sell-off-in-the-stocks-ensued.html",
+  },
+  {
+    id: "fb683df3-712f-41d6-961f-e28785f3bee4",
+    title:
+      "London's Heathrow Airport to restart flights after fire causes closure - ABC News",
+    description: "No Description",
+    time: "2025-03-21T21:11:15Z",
+    image: "/src/assets/image.jpg",
+    readMore:
+      "https://abcnews.go.com/International/fire-electrical-substation-closes-heathrow-airport/story?id\\\\u003d120009870",
   },
 ];
 
