@@ -198,14 +198,52 @@ const data = [
       "https://www.cnbc.com/2025/03/21/nvidias-ceo-tried-to-help-the-quantum-companies-but-a-sell-off-in-the-stocks-ensued.html",
   },
   {
-    id: "fb683df3-712f-41d6-961f-e28785f3bee4",
+    id: "a12f68fc-7e87-43e6-8a07-5e028b4c6b57",
     title:
-      "London's Heathrow Airport to restart flights after fire causes closure - ABC News",
-    description: "No Description",
-    time: "2025-03-21T21:11:15Z",
-    image: "/src/assets/image.jpg",
+      "Here are the best deals you can already grab from Amazon’s spring sales event - The Verge",
+    description:
+      "Amazon’s latest sale isn’t a Prime Day event, but it’s still a great time to save. Here, we rounded up the best deals you can already get on earbuds, tablets, and more.",
+    time: "2025-03-21T18:00:50Z",
+    image:
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/257633_amazon_big_spring_sale_CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
     readMore:
-      "https://abcnews.go.com/International/fire-electrical-substation-closes-heathrow-airport/story?id\\\\u003d120009870",
+      "https://www.theverge.com/tech/632597/amazon-big-spring-sale-2025-prime-day-deals",
+  },
+  {
+    id: "212b334c-9f42-43af-98eb-b01f27496a65",
+    title:
+      "The salary you need to be considered middle class in every U.S. state - AOL",
+    description:
+      "A six-figure household income doesn’t necessarily make you rich — in many cases, it just means you’re middle class. The upper bound of what’s considered midd...",
+    time: "2025-03-21T17:24:35Z",
+    image:
+      "https://s.yimg.com/ny/api/res/1.2/qJzWITCDq5EHhHZlg4Iyog--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03Nzg-/https://media.zenfs.com/en/aol_nbc_universal_184/5f0f803fa0d4acdee8293222e5a3ec28",
+    readMore:
+      "https://www.nbcnews.com/business/personal-finance/salary-need-considered-middle-class-every-us-state-rcna197508",
+  },
+  {
+    id: "7d66d363-dfb9-49a0-98ee-5a1bba9fdbdd",
+    title:
+      "Elon Musk tells Tesla employees 'hang onto your stock,' urges vandals to 'stop being psycho' - CNBC",
+    description:
+      "In an all-hands  livestreamed meeting on Thursday night, Tesla CEO Elon Musk commented on some of protests and instances of vandalism the company has faced.",
+    time: "2025-03-21T17:00:32Z",
+    image:
+      "https://image.cnbcfm.com/api/v1/image/108114305-1742584083907-108114305-17417212502025-03-11t192114z_254284279_rc26bdah68f8_rtrmadp_0_usa-trump.jpeg?v=1742584102&w=1920&h=1080",
+    readMore:
+      "https://www.cnbc.com/2025/03/21/elon-musk-tells-tesla-employees-hang-onto-your-stock-in-all-hands.html",
+  },
+  {
+    id: "6588ffd8-2ff8-4894-bf58-d3bc39eeaffc",
+    title:
+      "Micron Stock Falls but Analysts Are Bullish Despite Gross Margin 'Fly in the Ointment' - Investopedia",
+    description:
+      "Shares of Micron Technology turned lower Friday after the company’s fiscal second-quarter results a day earlier, but analysts have remained bullish on the memory chip company.",
+    time: "2025-03-21T16:32:10Z",
+    image:
+      "https://www.investopedia.com/thmb/4qah7MMw7e3AmIx5oIReXMzfDP4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-21479041531-de0db4ad72954ef8bf329e3f15580a75.jpg",
+    readMore:
+      "https://www.investopedia.com/micron-stock-falls-but-analysts-are-bullish-despite-gross-margin-fly-in-the-ointment-11701189",
   },
 ];
 
