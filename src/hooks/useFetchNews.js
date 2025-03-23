@@ -4,8 +4,9 @@ import { v4 as uuidv4 } from "uuid";
 import im from "../assets/image.jpg";
 import data from "../data.js";
 
-const API_URL =
-  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=25be7d8287a84972a775f5252e6eabc1";
+const API_KEY = import.meta.env.VITE_NEWS_API; // Use VITE_ prefix
+
+const API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`;
 
 export const useFetchNews = () => {
   const [articles, setArticles] = useState([]);
@@ -15,8 +16,9 @@ export const useFetchNews = () => {
       try {
         const response = await axios.get(API_URL);
         var articles = data;
-        if (response.data.articles &&  response.data.articles[0].urlToImage) articles = response.data.articles;
-        console.log(articles)
+        if (response.data.articles && response.data.articles[0].urlToImage)
+          articles = response.data.articles;
+        // console.log(articles);
         const newsData = articles.map((article) => ({
           id: uuidv4(),
           title: article.title || "No Title",
