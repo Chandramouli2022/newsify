@@ -1,0 +1,149 @@
+
+.sidebar {
+    width: calc(100% * 350 / 1440);
+    min-height: 100vh;
+    background-color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    font-size: 14px;
+    color: rgba(33, 33, 33, 1);
+  }
+  .sidebar.fb{
+    box-shadow: none;
+  }
+  .sidebar.nfb{
+    box-shadow: 0px 10px 30px rgba(24, 39, 75, 0.15);
+  }
+  .user {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+  }
+
+  
+.user span {
+    padding: 0 10px;
+  }
+  .user-hi,
+  .user-guide {
+    margin: 0px;
+  }
+  .user-image {
+    margin-left: 3%;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .view-toggle {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+    font-size: 14px;
+  }
+  .toggle-title {
+    padding: 0px;
+    margin: 0px;
+  }
+  .toggle-container {
+    margin-top: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  .view-toggle.fb{
+    display: none;
+  }
+
+  
+  .toggle-group,
+  .toggle-list {
+    border: none;
+    outline: none !important;
+    border-radius: 0px;
+    background-color: rgba(235, 242, 247, 1);
+    width: max-content;
+    height: 52px;
+    padding: 6px 24px;
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14) inset;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12) inset;
+  }
+  .toggle-group {
+    border-radius: 8px 0px 0px 8px;
+  }
+  .toggle-list {
+    border-radius: 0px 8px 8px 0px;
+  }
+  .active {
+    background-color: rgba(163, 255, 211, 1);
+  }
+  
+  .toggle-image1 {
+    width: 36px;
+    height: 26px;
+  }
+  .toggle-image2 {
+    width: 30px;
+    height: 20px;
+  }
+  
+  .feedback {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+    font-size: 14px;
+  }
+  .feedback-title {
+    margin: 0px;
+  }
+  .feedback-button {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-weight: 550;
+    color: rgba(33, 33, 33, 1);
+    border: none;
+    outline: none !important;
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14) inset;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12) inset;
+  }
+  .feedback-button.fb {
+    background-color: rgb(235, 150, 150);
+  }
+  .feedback-button.nfb {
+    background-color: rgb(124, 242, 185,1);
+
+  }
+  
