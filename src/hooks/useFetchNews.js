@@ -4,7 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 import im from "../assets/image.jpg";
 import data from "../data.js";
 
-const API_URL = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=25be7d8287a84972a775f5252e6eabc1";
+const API_URL =
+  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=25be7d8287a84972a775f5252e6eabc1";
 
 export const useFetchNews = () => {
   const [articles, setArticles] = useState([]);
@@ -12,14 +13,16 @@ export const useFetchNews = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        // const response = await axios.get(API_URL);
-        // const newsData = response.data.articles.map((article) => ({
-        const newsData = data.map((article) => ({
+        const response = await axios.get(API_URL);
+        var articles = data;
+        if (response.data.articles &&  response.data.articles[0].urlToImage) articles = response.data.articles;
+        console.log(articles)
+        const newsData = articles.map((article) => ({
           id: uuidv4(),
           title: article.title || "No Title",
           description: article.description || "No Description",
           time: article.publishedAt || new Date().toISOString(),
-          image: article.image || im,
+          image: article.urlToImage || article.image || im,
           readMore: article.url || "https://biztoc.com/x/11e125609293b7f3",
         }));
         setArticles(newsData.slice(0, 24));
