@@ -14,10 +14,10 @@ export const useFetchNews = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get(API_URL);
+        // const response = await axios.get(API_URL);
         var articles = data;
-        if (!response.status=="error" &&response.data.articles && response.data.articles[0].urlToImage)
-          articles = response.data.articles;
+        // if (!response.status=="error" &&response.data.articles && response.data.articles[0].urlToImage)
+        //   articles = response.data.articles;
         // console.log(articles);
         const newsData = articles.map((article) => ({
           id: uuidv4(),
