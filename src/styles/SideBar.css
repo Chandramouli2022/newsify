@@ -166,12 +166,11 @@
     box-shadow: none;
     background: transparent;
   }
-  .view-toggle {
-    width: 3%;
-  }
-  .toggle-image2,
+
+  .toggle-image1,
   .toggle-image2 {
-    padding: 3px;
+    padding: auto;
+    height: 16px;
   }
 
   .user-image {
