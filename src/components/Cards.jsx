@@ -10,7 +10,7 @@ function Cards({ currentArticles, view, onClose }) {
     </div>
   ) : (
     <div className='cards-list'>
-      {currentArticles.slice(0, 5).map((article) => (
+      {currentArticles.map((article) => (
         <CardList key={article.id} {...article} onClose={onClose} />
       ))}
     </div>

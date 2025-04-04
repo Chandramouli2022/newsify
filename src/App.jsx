@@ -15,7 +15,7 @@ function App() {
     totalPages,
     indexOfFirstItem,
     indexOfLastItem,
-  } = usePagination(articles.length, 6);
+  } = usePagination(articles.length, 8);
   const currentArticles = articles.slice(indexOfFirstItem, indexOfLastItem);
 
   const handleClose = (id) => {
