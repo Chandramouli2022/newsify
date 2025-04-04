@@ -118,10 +118,66 @@ textarea {
 .submit-fb {
   margin-top: 4%;
   float: right;
-  background-color: rgb(124, 242, 185,1);
+  background-color: rgb(124, 242, 185, 1);
   padding: 10px;
   font-size: 14px;
   font-weight: 700;
   border: none;
   outline: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .feedback-overlay {
+    flex-direction: column;
+  }
+
+  .feedback-form {
+    width: 80%;
+    height: auto;
+    max-height: 90%;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 10%;
+    left: 20px;
+    right: 20px;
+  }
+  .fb-cover {
+    position: fixed;
+    left: 0;
+  }
+
+  .feedback-overlay.show .feedback-form {
+    transform: translateY(0);
+  }
+
+  .feedback-form-container {
+    width: 100%;
+    padding: 0;
+    gap: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .country-state-div,
+  .email-phone-div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-fb {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
+  }
 }

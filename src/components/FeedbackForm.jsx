@@ -1,10 +1,13 @@
 import { useState } from "react";
 import "../styles/FeedbackForm.css";
 import InputLabel from "./InputLabel";
+import { useContext } from "react";
+import { FeedContext } from "../context/FeedTheme";
 
-const FeedbackForm = ({ isOpen, onClose }) => {
+const FeedbackForm = () => {
+  const {feed, toggle} = useContext(FeedContext)
   return (
-    <div className={`feedback-overlay ${isOpen ? "show" : ""}`} onClick={onClose}>
+    <div className={`feedback-overlay ${feed ? "show" : ""}`} onClick={toggle}>
       <div className="feedback-form" onClick={(e) => e.stopPropagation()}>
         <div className='feedback-form-container'>
           <form action='#'>

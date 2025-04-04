@@ -2,16 +2,14 @@ import user from "../assets/user.png";
 import group from "../assets/group.svg";
 import list from "../assets/list.svg";
 import "../styles/SideBar.css";
-import { useState } from "react";
+import { useContext } from "react";
+import { FeedContext } from "../context/FeedTheme";
 
-const SideBar = ({ view, setView, handleFeedback, feedBackOpen }) => {
-  const [isClicked, setIsClicked] = useState(false);
-  function handleClick() {
-    setIsClicked(!isClicked)
-    handleFeedback();
-  }
+const SideBar = ({ view, setView }) => {
+  const { feed, toggle } = useContext(FeedContext);
+
   return (
-    <aside className={`sidebar  ${isClicked ? "fb" : "nfb"}`}>
+    <aside className={`sidebar  ${feed ? "fb" : "nfb"}`}>
       <div className='user'>
         <img src={user} alt='user' className='user-image' />
         <span>
@@ -19,7 +17,7 @@ const SideBar = ({ view, setView, handleFeedback, feedBackOpen }) => {
           <p className='user-guide'>Here's your News!</p>
         </span>
       </div>
-      <div className={`view-toggle ${isClicked ? "fb" : "nfb"}`}>
+      <div className={`view-toggle ${feed ? "fb" : "nfb"}`}>
         <h2 className='toggle-title'>View Toggle</h2>
         <div className='toggle-container'>
           <button
@@ -41,8 +39,8 @@ const SideBar = ({ view, setView, handleFeedback, feedBackOpen }) => {
       <div className='feedback'>
         <h2 className='feedback-title'>Have a Feedback?</h2>
         <button
-          className={`feedback-button ${isClicked ? "fb" : "nfb"}`}
-          onClick={() => handleClick()}
+          className={`feedback-button ${feed ? "fb" : "nfb"}`}
+          onClick={toggle}
         >
           We’re Listening!
         </button>
