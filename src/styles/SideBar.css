@@ -148,26 +148,26 @@
     width: 100%;
     min-height: auto;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 0;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    padding: 5px;
   }
 
   .user,
   .view-toggle,
   .feedback {
-    width: 20%;
+    width: auto;
     margin-top: 0;
-    padding: 5px;
+    padding: 0px 10px;
     box-shadow: none;
     background: transparent;
   }
   .view-toggle {
-    width: 10%;
+    width: 3%;
   }
   .toggle-image2,
   .toggle-image2 {
