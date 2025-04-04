@@ -126,7 +126,7 @@ textarea {
   outline: none !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .feedback-overlay {
     flex-direction: column;
   }
