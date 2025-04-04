@@ -134,18 +134,22 @@ textarea {
   .feedback-form {
     width: 80%;
     height: auto;
-    max-height: 90%;
+    max-height: 75vh; /* Constrain max height */
+    overflow-y: auto; /* Enable scroll if needed */
     margin: 0 auto;
-    padding: 16px;
-    border-radius: 16px 16px 0 0;
+    padding: 18px;
+    border-radius: 16px;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
     position: fixed;
-    top: 10%;
+    top: 8%;
     left: 20px;
     right: 20px;
+    bottom: 4%; /* reduced to give more room for submit button */
+    scrollbar-width: none;
   }
+
   .fb-cover {
     position: fixed;
     left: 0;
@@ -158,13 +162,12 @@ textarea {
   .feedback-form-container {
     width: 100%;
     padding: 0;
-    gap: 10px;
+    gap: 8px;
   }
 
   form {
     width: 100%;
     padding: 0;
-    margin-bottom: 0;
     height: auto;
   }
 
