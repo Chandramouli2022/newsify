@@ -325,7 +325,7 @@ body {
   }
 
   .card {
-    width: 90%;
+    width: 85%;
     margin: 10px auto;
     height: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -336,25 +336,6 @@ body {
       height: max-content; /* Add this to make it square */
       object-fit: cover;
       margin: auto;
-    }
-    .close-image {
-      width: 20px;
-    }
-
-    .card-title {
-      font-weight: 700;
-      font-size: 20px;
-    }
-
-    .card-description {
-      font-weight: 400;
-      font-size: 20px;
-    }
-
-    .card-time {
-      font-weight: 700;
-      font-size: 16px;
-      color: rgba(185, 185, 185, 1);
     }
   }
   .cards-list {
