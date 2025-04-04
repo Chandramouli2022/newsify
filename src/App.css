@@ -375,6 +375,11 @@ body {
     margin: auto;
   }
   .page-nums {
+    padding-top: 4%;
     margin: 0 2% 18% 0;
+  }
+  .page-number {
+    font-size: 20px;
+    padding: 10px 0px;
   }
 }
