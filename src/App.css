@@ -319,7 +319,7 @@ body {
     overflow-y: auto;
     width: 100%;
     margin: auto;
-    margin-top: 23%;
+    margin-top: 17%;
     justify-content: center;
   }
 
@@ -338,7 +338,7 @@ body {
     }
   }
   .cards-list {
-    margin-top: 23%;
+    margin-top: 17%;
     width: 100%;
   }
   .card2 {

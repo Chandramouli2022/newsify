@@ -134,7 +134,7 @@ textarea {
   .feedback-form {
     width: 80%;
     height: auto;
-    max-height: 75vh; /* Constrain max height */
+    max-height: 80vh; /* Constrain max height */
     overflow-y: auto; /* Enable scroll if needed */
     margin: 0 auto;
     padding: 18px;
